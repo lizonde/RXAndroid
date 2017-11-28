@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="index"
+            type="Integer"/>
+
+        <variable
+            name="data"
+            type="com.sagar.android_projects.rxandroid.pojo.RecyclerViewItemPojo"/>
+
+        <variable
+            name="context"
+            type="com.sagar.android_projects.rxandroid.MainActivity"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{()->context.itemClickedOnRecyclerView(index)}"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textview_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.itemName}"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
