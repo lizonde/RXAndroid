@@ -6,4 +6,7 @@
     <string name="title_activity_buffer">Buffer</string>
     <string name="title_activity_debounce">Debounce</string>
     <string name="title_activity_retrofit">Retrofit</string>
+    <string name="title_activity_form_validation">FormValidation</string>
+    <string name="card_number">Card Number</string>
+    <string name="name">name</string>
 </resources>

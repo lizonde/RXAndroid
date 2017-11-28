@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewItemPojos.add(new RecyclerViewItemPojo("Buffer"));
         recyclerViewItemPojos.add(new RecyclerViewItemPojo("DeBounce"));
         recyclerViewItemPojos.add(new RecyclerViewItemPojo("Retrofit"));
+        recyclerViewItemPojos.add(new RecyclerViewItemPojo("Form Validation"));
 
         activityMainBinding.contentMain.recyclerview.setLayoutManager(new LinearLayoutManager(this));
         activityMainBinding.contentMain.recyclerview.setAdapter(new RecyclerviewAdapter(recyclerViewItemPojos, this));
@@ -52,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 3:
                 startActivity(new Intent(MainActivity.this, Retrofit.class));
+                break;
+            case 4:
+                startActivity(new Intent(MainActivity.this, FormValidation.class));
                 break;
         }
     }

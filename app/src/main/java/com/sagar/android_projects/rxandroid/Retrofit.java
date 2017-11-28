@@ -59,6 +59,5 @@ public class Retrofit extends AppCompatActivity {
                             }
                         }
                 );
-
     }
 }

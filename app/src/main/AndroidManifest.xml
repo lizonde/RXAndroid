@@ -3,6 +3,7 @@
           package="com.sagar.android_projects.rxandroid">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".singleton.AppSingleton"
         android:allowBackup="true"
@@ -39,6 +40,11 @@
         <activity
             android:name=".Retrofit"
             android:label="@string/title_activity_retrofit"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".FormValidation"
+            android:label="@string/title_activity_form_validation"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
